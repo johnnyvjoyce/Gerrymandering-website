@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- CSS Template from https://www.w3schools.com/w3css/w3css_templates.asp -->
+
+<html>
+<title>What Is Gerrymandering?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="logo/v1/icon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white"><img src="logo/rnrmenu.png" alt="Redistrict New Regionland logo" height="25"> Home</a>
+    <a href="whatis.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">What is Gerrymandering?</a>
+    <a href="proposal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">The Proposal</a>
+    <a href="https://www.change.org/p/establish-a-redistricting-committee-in-new-regionland" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sign The Petition</a>
+    <a href="support.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Support/About Us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="whatis.html" class="w3-bar-item w3-button w3-padding-large">What is Gerrymandering?</a>
+    <a href="proposal.html" class="w3-bar-item w3-button w3-padding-large">The Proposal</a>
+    <a href="https://www.change.org/p/establish-a-redistricting-committee-in-new-regionland" class="w3-bar-item w3-button w3-padding-large">Sign The Petition</a>
+    <a href="support.html" class="w3-bar-item w3-button w3-padding-large">Support/About Us</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:100px 16px">
+      <h1 class="w3-margin w3-jumbo">What Is Gerrymandering?</h1>
+      <p class="w3-xlarge">(And Why Should I Care?)</p>
+
+      <div class = "w3-content" align = "left">
+          <h5 class="w3-padding-32">In our current system, those in power are allowed to choose where districts are drawn as they see fit with little to no restrictions. This means that they can use techniques to their own advantage where opposing voters in one district "waste" their votes and supporting voters in another have more competitive votes. </h5>
+
+    </div>
+</header>
+
+<!-- First Grid -->
+<a name="howdoesitwork">
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>How Does This Work?</h1>
+      <h5 class="w3-padding-32">In a district, the candidate with the most votes wins the district. But those districts don't always accurately represent the people.</h5>
+
+      <p class="w3-text-grey"> Observe the diagram to the right. If the districts were to accurately represent the population's vote, we would expect that blue would have 3 districts and red would have 2. This isn't the case though in the two examples.<br>
+
+      In the middle image, blue has gained a disproportionate advantage over red by ensuring that each district has a majority of blue voters, leaving red winning none. In the right image, red has gained a disproportionate advantage over blue by assigning two districts to be won by blue by a huge landslide; this leaves the remaining area open for districts that have a very small red majority, making them the winner.</p>
+
+
+        <p><center><a href="https://www.dailynews.com/2017/03/18/gerrymandering-californias-latest-action-thriller-villain/">Read more</a></center></p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <img src="images/howtosteal.jpg" alt="Source: dailynews.com" width="100%">
+        <p class="w3-text-grey"><font size=2>Source: <a href="https://dailynews.com">dailynews.com</a></font></p>
+    </div>
+  </div>
+</div></a>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>How Can It Be Prevented?</h1>
+      <h5 class="w3-padding-32">There are many such ways. The voting system or representation system can be changed entirely.</h5>
+
+      <p class="w3-text-grey">The system we use simply chooses the winner to be the candidate with the most votes. While this may be the simplest and most intuitive system, it is not necessarily the best.<br><br>
+
+          One other method sometimes used is called "<a href="https://www.electoral-reform.org.uk/voting-systems/types-of-voting-system/borda-count/"><b>borda count</b></a>". Rather than just voting for a single candidate, a voter can choose to assign preferences to candidates. For example, they may give 5 points to their favorite candidate, then 4 points to their second favorite, and so on. The candidate with the most points is then the winner. This way, voters don't have to commit to a single candidate, and can also support other canditates that they also like.</p>
+
+        <div class="w3-third w3-center"><br>
+      <iframe src="https://www.youtube.com/embed/l8XOZJkozfI" frameborder="0" allow="autoplay; encrypted-media" width="90%" allowfullscreen></iframe>
+
+            <p class="w3-text-grey" style="width: 90%; margin: 0 auto"><font size=2>A YouTube video by user <a href="https://www.youtube.com/CGPGrey">CGP Grey</a> explaining STV and its benefits</font></p>
+    </div>
+      <div class="w3-twothird">
+          <p class="w3-text-grey">However, we can also take this type preferential voting a step further. Instead of giving points to canditates, a voter can list the order that they like the candidates the most. After all the votes are collected, the number of "first preference" votes for each candidate are counted. If there is a majority for one candidate, then they are the winner. If not, then the candidate with the fewest votes is eliminated, and everybody who voted for the eliminated candidate has their vote automatically "transferred" to their second preference; the process of eliminating candidates repeats until there is a winner. This is called "<a href="https://en.wikipedia.org/wiki/Instant-runoff_voting"><b>instant-runoff voting</b></a>" (<b>IRV</b>). <br><br>
+
+          We can take this yet another step further and allow for multiple winners instead of just one: this is called "<a href="https://en.wikipedia.org/wiki/Single_transferable_vote"><b>single transferable vote</b></a>" (<b>STV</b>). This has many benefits, such as giving proportional representation, reducing "<a href="https://en.wikipedia.org/wiki/Tactical_voting">tactical voting</a>" (where one votes for a candidate that isn't necessarily their favorite because they have a higher chance to win), and others which are explained in the video.<br><br></p></div>
+
+      <p class="w3-text-grey">One more beneficial system is called "<a href="https://en.wikipedia.org/wiki/Majority_judgment"><b>majority judgment</b></a>". This is where voters rate each candidate on a given scale; for example, it could range from "very good" to "very poor" on a scale of 1-5. When the votes are counted, each candidate has their median rating calculated, then the highest ranked candidate is the winner. This method is also resistant to tactical voting and voters can freely express their opinions of each candidate without having to decide which they prefer over another if there are two that they equally like.</p>
+
+        <p><center><a href="https://www.electoral-reform.org.uk/voting-systems/types-of-voting-system/">Read more</a></center></p>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>What's <i>Our</i> Solution?</h1>
+      <h5 class="w3-padding-32">Our proposal is a much smaller step than overhauling the entire system.</h5>
+
+      <p class="w3-text-grey">As desirable as a new voting system may be, it is unfortantely less likely to be passed than a smaller solution. Our proposal is to keep our current system, but to create an independent committee that prevents those in power from abusing the system. These are already used in <a href="https://en.wikipedia.org/wiki/Redistricting_commission">many other states</a> and it can also be used in ours.</p>
+
+      <center><a href="proposal.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">View The Proposal</button></a></center>
+  </div>
+</div>
+
+<!-- Fourth grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>Further Information</h1>
+      <h5 class="w3-padding-32">What are some things that a committee like ours should consider? How can it prevent scenarios like the one mentioned earlier?</h5>
+
+      <p class="w3-text-grey">One thing you may have noticed in the <a href=#howdoesitwork>image at the top</a> of the page is that the districts that disproportionately favor red generally don't look "nice". We can measure this mathematically and find ways to test how "nice" a district looks; this is what we call <a href=http://redistricting.lls.edu/where-state.php#compactness>compactness</a>, and there are many different ways of measuring it. <sup>(Remember that this isn't the only way of measuring gerrymandering, because the map layout that disproportionately favored blue was composed of very compact districts)</sup></p>
+
+      <div class="w3-twothird">
+          <p class="w3-text-grey">One such method is the "<a href="https://en.wikipedia.org/wiki/Polsby-Popper_Test">Polsby-Popper measure</a>", pictured to the right. We obtain this by measuring the district's area (<span lang="latex">A</span>) and perimeter (<span lang="latex">p</span>). We calculate the measure by <span lang="latex"> \tfrac{4 \pi A}{p^2}</span>; the result we end up with tells us how close the district is to a perfect circle (where a number closer to 1 is more compact and a number closer to 0 is less compact).</p></div>
+
+      <div class="w3-third w3-center">
+        <img src="images/polsbypopper.png" alt="Source: azavea.com" width="90%">
+        <p class="w3-text-grey"><font size=2>Source: <a href="https://azavea.com">azavea.com</a></font></p>
+      </div>
+
+
+    <div class="w3-quarter w3-center">
+        <img src="images/convexhull.png" alt="Source: azavea.com" width="30%">
+        <p class="w3-text-grey"><font size=2>Source: <a href="https://azavea.com">azavea.com</a></font></p>
+      </div>
+
+      <p class="w3-text-grey">Another such method is to look at the "<a href = "https://en.wikipedia.org/wiki/Convex_hull">convex hull</a>" measure, which is taken by dividing the area of the district by the area of its convex hull. The convex hull is the smallest <a href="https://en.wikipedia.org/wiki/Convex_polygon">convex shape</a> (with no "indents") that contains the district. So in the case of the image to the left, if the <font color="0db7bc">blue</font>(ish) shape is the distrct, then the <font color="green">green</font> crosshatched shape is the convex hull. This measure tells us how convex a shape is, or how many indents there are; the fewer indents there are and the smaller the indents are, the more compact the district is.<br><br><br>
+
+      Our proposal uses the convex hull measure as a formal requirement for the committee to consider. There are many more measures that can be used, which you can read about by clicking the link below.</p>
+        <p><center><a href="https://www.azavea.com/blog/2016/07/11/measuring-district-compactness-postgis/">Read more</a></center></p>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>Potential Issues</h1>
+      <h5 class="w3-padding-32">We use measurements such as area and perimeter in calculating compactness. The issue is that these may not always have the value we expect them to</h5>
+    <div class="w3-twothird">
+
+      <p class="w3-text-grey">Say we measure the coastline of the island of Great Britain. If we were to use a 1 mile long measuring stick, we would get a certain measurement. However, if we used a 1 meter measuring stick, we would be able to see much finer details, such little outcrops or tiny concavities, and we can notice this on the diagram to the right. This would mean that our measurement becomes higher; we call this the <a href="https://en.wikipedia.org/wiki/Coastline_paradox">coastline paradox</a>.<br>
+      </p>
+      </div>
+
+    <div class="w3-third w3-center">
+        <img src="images/coastlineparadox.jpg" alt="Diagram illustrating the coastline paradox" width="100%">
+        <p class="w3-text-grey"><font size=2>Source: <a href="http://fractalfoundation.org/OFC/OFC-10-4.html">fractalfoundation.org</a></font></p>
+      </div>
+
+
+
+    <div class="w3-quarter w3-center">
+        <img id="myImg" src="images/pp_ratio.png" alt="The Polsby-Popper measure at different resolutions" width="90%">
+        <p class="w3-text-grey"><font size=2>Click image to enlarge</font></p>
+        <!-- script taken from w3schools.com -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+
+
+    <p class="w3-text-grey"><br><br>This can hugely impact the way we measure compactness. By using a program called <a href="https://qgis.org/en/site/">QGIS</a>, we are able to find the Polsby-Popper measure at various different resolutions for each congressional district in each state. First, we did it with a resolution of 1:500,000, then afterwards with a resolution of 1:20,000,000 (the higher the number, the higher the resoltion). Now observe the map to the left. In districts where the two measurements differ wildly, the color of the district becomes a darker blue. In some cases, this can even reach a factor of over 4 and a half to 1; that is to say, the measurement we get by using a higher resolution is 4.5 times higher, which is an enormous difference. <br><br><br>
+
+        There are still other issues with compactness. For example, a district may have a long, jagged coastline; this would not mean that it was gerrymandered, but it would still have a low compactness score as a result. It is for these reasons, <a href="http://www.redistrictingthenation.com/whatis-compactness.aspx">amongst others</a>, that compactness is not the main goal of our committee, however they will consider the convex hull measure at the bare minimum.</p>
+
+
+    <p><center><a href="http://www.redistrictingthenation.com/whatis-compactness.aspx">Read more</a></center></p>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Make a difference</h1>
+    <h1 class="w3-margin w3-xlarge"><a href="https://www.change.org/p/establish-a-redistricting-committee-in-new-regionland?recruiter=873640753&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition">Click here</a> to sign the petition</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Johnny Joyce 2017</p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+<!-- script taken from w3schools.com -->
+
+</body>
+</html>
